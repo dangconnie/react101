@@ -87,7 +87,7 @@ function Application(props){
 			<Header title={props.title}/>
 			<div className="teams">
 
-				{/* Using Map to loop thrugh our teams JSON. These are no longer necesary */}
+				{/* Using Map to loop thrugh our teams JSON.*/}
 
 				{props.teams.map((team, index) =>{
 					return <Team key={index} name={team.name} score={team.score} />
