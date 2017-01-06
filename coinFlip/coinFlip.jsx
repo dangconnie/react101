@@ -18,10 +18,19 @@ var Application = React.createClass({
 	},
 
 	flipCoin: function(){
-		
+		{/* Round Math.random() to get a it to be a number between 0 and 1. Assign 0 and 1 to be heads/tails. Put this into an if/else statement to determine which side of the coin will show. */}
+		var checkState = this.setState.image
+		var randNum = Math.round(Math.random())
 
+		if(randNum == 0){
+			checkState = image1;
+			console.log("heads")
+		}else{
+			checkState = image2;
+			console.log("tails")
+		}
 		this.setState({
-			image: image2
+			image: checkState
 		});
 	},
 
